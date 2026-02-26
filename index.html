@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav aria-label="Main navigation" class="nav container">
+      <nav class="nav container">
         <a class="logo" href="#" aria-label="Spotify home">
           <img src="/assets/img/spotify-logo.png" width="150px">
         </a>
@@ -25,7 +25,7 @@
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero">
         <div class="container">
           <h1 id="hero-title">Music for everyone</h1>
           <p>Spotify is now free on mobile, tablet and computer. </p>
@@ -34,7 +34,7 @@
         </div>
       </section>
 
-      <section class="what-is" aria-labelledby="what-is-title">
+      <section class="what-is">
         <div class="container">
           <h2 id="what-is-title">What’s on Spotify?</h2>
               <article>
@@ -55,7 +55,7 @@
         </div>
       </section>
 
-      <section class="additional-features" aria-labelledby="additional-features-title">
+      <section class="additional-features">
         <div class="container">
           <h2 id="additional-features-title">It’s as yeezy as Kanye West. </h2>
               <article>
@@ -83,9 +83,28 @@
           <p>&copy; 2026 Spotify Clone</p>
         </div>
         <div class="footer-links">
-          <p>Basic footer information and links.</p>
+          <p>Basic footer information and <a href="#" target="_blank">links</a></p>
         </div>
       </div>
     </footer>
   </body>
+  <style>
+    footer{
+      display: flex;
+      background-color: black;
+      color: white;
+      justify-content: center;
+      align-content: center;
+    }
+    footer p{
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+      color:red;
+    }
+    a:hover{
+      color:pink
+    }
+  </style>
 </html>
