@@ -77,7 +77,32 @@
         margin: 0;
         padding: 0;
     }
-    
+    /* Evita scroll horizontal en móvil y asegura que los contenedores respeten el ancho */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Contenedor reutilizable: padding responsive sin provocar overflow */
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 20px; /* usa padding interno en lugar de márgenes negativos */
+}
+
+/* Medios responsivos */
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
     body{
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
@@ -120,7 +145,7 @@
         background-position: center center;
         background-size: auto;
         min-height: 100vh;
-        padding: 50px 30px 30px 30px;
+        padding: 50px 20px 30px 20px;
     }
 
     section.hero div.container {
@@ -195,6 +220,10 @@
         
     }
 
+    /**
+    * se trabajan los estilos de el yeezy
+    */
+
     .yeezy .container{
         background-color: var(--color-brand);
         padding: 50px 30px 30px 30px;
@@ -241,6 +270,7 @@
         text-align: center;
         padding-top: 20px;
     }
+
     .copy p{
         padding-top: 0px;
     }
@@ -257,6 +287,7 @@
 
 /* tablet */
 @media (min-width: 768px) {  
+    
     /**
     * se trabajan los estilos de el footer tablet
     */
@@ -266,6 +297,10 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
+    }
+    
+    footer p{
+        padding-top: 0px;
     }
 }
 
