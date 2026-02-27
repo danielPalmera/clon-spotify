@@ -133,7 +133,7 @@
         align-items: center; /* centra verticalmente el container */
         background-image: url(/assets/img/banner-m.jpg);
         background-position: center center;
-        background-size: auto;
+        background-size: cover;
         min-height: 100vh;
         padding: 50px 20px 30px 20px;
     }

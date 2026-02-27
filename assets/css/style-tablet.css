@@ -5,7 +5,7 @@
     */
 
     .title-limit {
-        display: inline-block; /* El contenedor se ajusta al texto */
+        display: inline-block; 
         margin-bottom: 50px;
         text-align: center;
     }
@@ -35,6 +35,10 @@
         gap: 2rem;
         align-items: center;
         justify-content: space-between;
+        background-image: url(/assets/img/spotify-icon-white.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100px;
     }
 
     .yeezy .left, .yeezy .right {
@@ -48,11 +52,11 @@
         justify-content: center;
     }
 
-    .yeezy .right img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
+        .yeezy .right img {
+            width: auto;
+            max-height: 550px;
+            display: block;
+        }
 
     .yeezy h2{
         display: inline-block;
