@@ -41,6 +41,11 @@
         --font-size-lg: 1.5rem; /*  24px */
         --font-size-xl: 2rem; /*  32px */
         --font-size-2xl: 3rem; /*  48px */
+        /**
+        * nota el diseño en pdf n hay una tamaño de fuenta para H1
+        * se inprovisa uno
+        */
+        --font-size-6xl: 6rem; /*  48px */
 
         --font-weight-regular: 400;
         --font-weight-medium: 500;
@@ -82,17 +87,59 @@
         background-color: var(--color-bg-light);
         color:var(--color-text-primary)
     }
+
+    h1{
+        font-size: var(--font-size-2xl);
+        padding-bottom: 20px;
+    }
+
     h2{
         font-size:var(--font-size-xl);
     }
 
     h3{
         font-size: var(--font-size-lg);
-        
-        
     }
+
     /**
-    * se trabajan los estilos as
+    * se trabajan los estilos de el hero banner
+    */
+
+    .hero{
+        display: flex;
+        align-items: center; /* centra verticalmente el container */
+        background-image: url(/assets/img/banner-m.jpg);
+        background-position: center center;
+        background-size: auto;
+        min-height: 100vh;
+        padding: 50px 30px 30px 30px;
+    }
+
+    section.hero div.container {
+        text-align: center;
+    }
+    .hero p{
+        font-size: var(--font-size-lg);
+        color: var(--color-text-primary);
+        margin:20px 20px 20px 20px;
+    }
+    .btn{
+        background-color: red;
+        padding: 10px 20px;
+        border-radius: var(--radius-md);
+        background-color: var(--color-brand);
+    }
+    .btn:hover{
+        background-color: var(--color-brand-hover);
+        color:var(--color-text-muted)
+    }
+
+    .btn:focus{
+        text-decoration: none;
+    }
+
+    /**
+    * se trabajan los estilos as what-is
     */
     .what-is{
         padding: 50px 30px 30px 30px;
@@ -101,9 +148,8 @@
     .what-is .container {
         display: flex;
         flex-direction: column;
-        
-        gap: 1.5rem;
     }
+
     .what-is .container article {
         text-align: center;
     }
@@ -168,10 +214,6 @@
         font-weight: var(--font-weight-medium);
         margin:20px 20px 40px 0px;
         line-height: 1.8em;
-    }
-
-    .yeezy .right{
-       
     }
 
 /**
