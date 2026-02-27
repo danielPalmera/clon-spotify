@@ -24,23 +24,34 @@
     */
     
     .yeezy .title-limit {
-        display: inline-block; /* El contenedor se ajusta al texto */
+        display: inline-block;
         margin-bottom: 50px;
-        text-align: center;
+        text-align: left;
     }
 
-    section.yeezy .container{
+    .yeezy .container {
         display: flex;
         flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .container .left{
-        max-width: 50%;
+    .yeezy .left, .yeezy .right {
+        width: 45%;
+        box-sizing: border-box;
     }
-    .container .right{
+
+    .yeezy .right {
         display: flex;
-        max-width: 50%;
         align-items: center;
+        justify-content: center;
+    }
+
+    .yeezy .right img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 
     .yeezy h2{
@@ -48,8 +59,9 @@
         border-bottom: 2px solid var(--color-bg-light);
         padding-bottom: 5px;
         padding-bottom: 20px;
-        text-align: center;
-        color: var(--color-text-black);
+        text-align: left;
+        color: var(--color-text-primary);
+        width: 100%;
     }
 
     .yeezy hr{
