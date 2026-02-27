@@ -287,7 +287,34 @@ video {
 
 /* tablet */
 @media (min-width: 768px) {  
-    
+    /**
+    * se trabajan los estilos de el yeezy tablet
+    */
+    section.yeezy .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .left{
+        max-width: 50%;
+    }
+    .container .right{
+        display: flex;
+        max-width: 50%;
+        align-items: center;
+    }
+
+    .yeezy h2{
+        text-align: left;
+    }
+
+    .yeezy hr{
+        text-align: center;
+        margin:unset;
+        margin-bottom: 50px;
+    }
+
+
     /**
     * se trabajan los estilos de el footer tablet
     */
@@ -298,7 +325,7 @@ video {
         align-items: center;
         width: 100%;
     }
-    
+
     footer p{
         padding-top: 0px;
     }
