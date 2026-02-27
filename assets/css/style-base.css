@@ -78,29 +78,19 @@
         padding: 0;
     }
     /* Evita scroll horizontal en móvil y asegura que los contenedores respeten el ancho */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
+    html,
+    body {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    }
 
-/* Contenedor reutilizable: padding responsive sin provocar overflow */
-.container {
-  width: 100%;
-  box-sizing: border-box;
-  padding-inline: 20px; /* usa padding interno en lugar de márgenes negativos */
-}
-
-/* Medios responsivos */
-img,
-picture,
-svg,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+    /* Contenedor reutilizable: padding responsive sin provocar overflow */
+    .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 20px; /* usa padding interno en lugar de márgenes negativos */
+    }
 
 
     body{
@@ -174,6 +164,12 @@ video {
     /**
     * se trabajan los estilos as what-is
     */
+    .title-limit {
+        display: inline-block; /* El contenedor se ajusta al texto */
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
     .what-is{
         padding: 50px 30px 30px 30px;
     }
@@ -188,6 +184,9 @@ video {
     }
     
     .what-is h2{
+        display: inline-block;
+        border-bottom: 2px solid var(--color-brand);
+        padding-bottom: 5px;
         padding-bottom: 20px;
         text-align: center;
         color: var(--color-text-black);
@@ -230,6 +229,16 @@ video {
     }
 
     .yeezy h2{
+        display: inline-block;
+        border-bottom: 2px solid var(--color-bg-light);
+        padding-bottom: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+    
+    }
+
+
+    .yeezy h2{
         text-align: center;
         padding-bottom: 20px;
     }
@@ -254,6 +263,10 @@ video {
     }
 
 /**
+* se trabajan los estilos de el footer
+*/
+
+/**
 * se trabajan los estilos de el footer mobile
 */
     footer{
@@ -263,18 +276,16 @@ video {
         justify-content: center;
         align-content: center;
         align-content: space-around;
-        padding: 50px
+        padding: 50px 20px;
     }
 
     footer p{
         text-align: center;
         padding-top: 20px;
     }
-
     .copy p{
         padding-top: 0px;
     }
-
     a{
         text-decoration: none;
         color:var(--color-text-primary)
@@ -283,56 +294,5 @@ video {
     a:hover{
         color:var(--color-text-secondary);
         text-decoration: underline;
+        
     }
-
-/* tablet */
-@media (min-width: 768px) {  
-    /**
-    * se trabajan los estilos de el yeezy tablet
-    */
-    section.yeezy .container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container .left{
-        max-width: 50%;
-    }
-    .container .right{
-        display: flex;
-        max-width: 50%;
-        align-items: center;
-    }
-
-    .yeezy h2{
-        text-align: left;
-    }
-
-    .yeezy hr{
-        text-align: center;
-        margin:unset;
-        margin-bottom: 50px;
-    }
-
-
-    /**
-    * se trabajan los estilos de el footer tablet
-    */
-    footer .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    footer p{
-        padding-top: 0px;
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {  }
-
-/* Desktop ancho */
-@media (min-width: 1440px) {  }

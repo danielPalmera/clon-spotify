@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ...existing code... -->
+    <link rel="stylesheet" href="assets/css/style-base.css">
+    <link rel="stylesheet" href="assets/css/style-tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="assets/css/style-desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="assets/css/style-wide.css" media="screen and (min-width: 1440px)">
+<!-- ...existing code... -->
+
+
   </head>
   <body>
     <header>
@@ -40,8 +49,9 @@
 
       <section class="what-is">
         <div class="container">
-          <h2 id="what-is-title">What’s on Spotify?</h2>
-          <hr>
+          <div class="title-limit">
+            <h2 id="what-is-title">What’s on Spotify?</h2>
+          </div>
           <article>
             <img src="/assets/img/music-icon.png" width="250px" alt="icon search">
             <h3>Millions of Songs</h3>
@@ -63,8 +73,9 @@
       <section class="yeezy">
         <div class="container">
           <div class="left">
-            <h2 id="yeezy-title">It’s as yeezy as Kanye West. </h2>
-            <hr>
+            <div class="title-limit">
+              <h2 id="yeezy-title">It’s as yeezy as Kanye West. </h2>
+            </div>
             <article>
               <h3>Search</h3>
               <p>Know what you want to listen to? Just search and hit play</p>

@@ -1,0 +1,76 @@
+/* tablet */
+@media (min-width: 768px) {  
+    /**
+    * se trabajan los estilos as what-is
+    */
+
+    .title-limit {
+        display: inline-block; /* El contenedor se ajusta al texto */
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .what-is h2{
+        display: inline-block;
+        border-bottom: 2px solid var(--color-brand);
+        padding-bottom: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: var(--color-text-black);
+    }
+
+    /**
+    * se trabajan los estilos de el yeezy tablet
+    */
+    
+    .yeezy .title-limit {
+        display: inline-block; /* El contenedor se ajusta al texto */
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    section.yeezy .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .left{
+        max-width: 50%;
+    }
+    .container .right{
+        display: flex;
+        max-width: 50%;
+        align-items: center;
+    }
+
+    .yeezy h2{
+        display: inline-block;
+        border-bottom: 2px solid var(--color-bg-light);
+        padding-bottom: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: var(--color-text-black);
+    }
+
+    .yeezy hr{
+        text-align: center;
+        margin:unset;
+        margin-bottom: 50px;
+    }
+
+
+    /**
+    * se trabajan los estilos de el footer tablet
+    */
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer p{
+        padding-top: 0px;
+    }
+}
