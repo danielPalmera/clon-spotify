@@ -1,5 +1,28 @@
 /* tablet */
-@media (min-width: 768px) {  
+
+    .nav.container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-left: auto; /* opcional: empuja los enlaces a la derecha */
+        list-style: none;
+    }
+
+    .icon-menu {
+        display: none; /* ocultar icono de menú en tablet si usas links visibles */
+    }
+
+
+    .nav-links a{
+        color: var( --color-text-black);
+    }
+
     /**
     * se trabajan los estilos as what-is
     */
@@ -89,4 +112,3 @@
     footer p{
         padding-top: 0px;
     }
-}
