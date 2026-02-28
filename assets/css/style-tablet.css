@@ -1,5 +1,9 @@
 /* tablet */
 
+    article{
+        display: inline-block;
+    }
+
     .nav.container {
         display: flex;
         align-items: center;
@@ -41,6 +45,7 @@
         text-align: center;
         color: var(--color-text-black);
     }
+
 
     /**
     * se trabajan los estilos de el yeezy tablet

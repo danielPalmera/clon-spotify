@@ -83,6 +83,7 @@
     max-width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    
     }
 
     /* Contenedor reutilizable: padding responsive sin provocar overflow */
@@ -127,7 +128,7 @@
     .nav-links{
         display: none;
     }
-    
+
     /**
     * se trabajan los estilos de el hero banner
     */
@@ -164,7 +165,9 @@
     .btn:focus{
         text-decoration: none;
     }
-
+    .articles{
+        display:flex;
+    }
     /**
     * se trabajan los estilos as what-is
     */
@@ -183,7 +186,17 @@
         flex-direction: column;
     }
 
-    .what-is .container article {
+    .what-is .articles {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    .what-is .articles article {
+        width: 100%;
+        box-sizing: border-box;
         text-align: center;
     }
     

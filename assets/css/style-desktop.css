@@ -1,1 +1,65 @@
 /* Desktop */
+/**
+    * se trabajan los estilos as what-is
+    */
+    .title-limit {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .what-is{
+        padding: 50px 30px 30px 30px;
+    }
+
+    .what-is .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what-is .articles {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .what-is .container article {
+        
+    }
+    
+    .what-is h2{
+        display: inline-block;
+        border-bottom: 2px solid var(--color-brand);
+        padding-bottom: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: var(--color-text-black);
+    }
+
+    .what-is hr{
+        height: 4px;
+        background-color: var(--color-brand);
+        margin:auto;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .what-is img{
+        max-width: 150px;
+        padding-bottom: 10px;
+    }
+
+    .what-is h3{
+        color:var(--color-brand);
+        margin-bottom: 30px;
+    }
+
+    .what-is p{
+        font-size: var(--font-size-md);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-text-black);
+        margin:20px 0px 40px 0px;
+        line-height: 1.8em;
+        
+    }
