@@ -80,7 +80,9 @@
     /* Evita scroll horizontal en móvil y asegura que los contenedores respeten el ancho */
     html,
     body {
-    max-width: 100%;
+        max-width: 1440px;
+        margin: auto;
+
     overflow-x: hidden;
     box-sizing: border-box;
     
@@ -136,7 +138,7 @@
     .hero{
         display: flex;
         align-items: center; /* centra verticalmente el container */
-        background-image: url(/assets/img/banner-m.jpg);
+        background-image: url(../img/banner-m.jpg);
         background-position: center center;
         background-size: cover;
         min-height: 100vh;
@@ -239,7 +241,9 @@
     /**
     * se trabajan los estilos de el yeezy
     */
-
+    .yeezy{
+        padding: 50px 30px 30px 30px;
+    }
     .yeezy .container{
         background-color: var(--color-brand);
         padding: 50px 30px 30px 30px;
