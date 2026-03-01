@@ -1,120 +1,104 @@
 /* tablet */
 
-    article{
-        display: inline-block;
-    }
+/* NAV */
+.nav.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon-menu {
+    display: none;
+}
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
 
-    .nav.container {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    
-
-    .icon-menu {
-        display: none;   
-    }
-    .nav-links {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        margin-left: auto; /* opcional: empuja los enlaces a la derecha */
-        list-style: none;
-    }
+.nav-links a {
+    color: var(--color-text-black);
+}
 
 
-    .nav-links a{
-        color: var( --color-text-black);
-    }
 
-    /**
-    * se trabajan los estilos as what-is
-    */
+/* ARTÍCULOS */
+article {
+    display: inline-block;
+}
 
-    .title-limit {
-        display: inline-block; 
-        margin-bottom: 50px;
-        text-align: center;
-    }
+/* WHAT-IS */
+.title-limit,
+.what-is h2 {
+    display: inline-block;
+    text-align: center;
+}
+.title-limit {
+    margin-bottom: 50px;
+}
+.what-is h2 {
+    border-bottom: 2px solid var(--color-brand);
+    padding-bottom: 20px;
+    color: var(--color-text-black);
+}
 
-    .what-is h2{
-        display: inline-block;
-        border-bottom: 2px solid var(--color-brand);
-        padding-bottom: 5px;
-        padding-bottom: 20px;
-        text-align: center;
-        color: var(--color-text-black);
-    }
+/* YEEZY */
+.yeezy .title-limit {
+    text-align: left;
+}
+.yeezy .container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../img/spotify-icon-white.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+.yeezy .left,
+.yeezy .right {
+    width: 45%;
+    box-sizing: border-box;
+}
+.yeezy .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yeezy .right img {
+    width: auto;
+    max-height: 550px;
+    display: block;
+}
+.yeezy h2 {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-bg-light);
+    padding-bottom: 20px;
+    text-align: left;
+    color: var(--color-text-primary);
+    width: 100%;
+}
+.yeezy hr {
+    text-align: center;
+    margin: unset;
+    margin-bottom: 50px;
+}
 
+/* FOOTER */
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+footer p {
+    padding-top: 0;
+}
 
-    /**
-    * se trabajan los estilos de el yeezy tablet
-    */
-    
-    .yeezy .title-limit {
-        display: inline-block;
-        margin-bottom: 50px;
-        text-align: left;
-    }
-
-    .yeezy .container {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        align-items: center;
-        justify-content: space-between;
-        background-image: url(../img/spotify-icon-white.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 100px;
-    }
-
-    .yeezy .left, .yeezy .right {
-        width: 45%;
-        box-sizing: border-box;
-    }
-
-    .yeezy .right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-        .yeezy .right img {
-            width: auto;
-            max-height: 550px;
-            display: block;
-        }
-
-    .yeezy h2{
-        display: inline-block;
-        border-bottom: 2px solid var(--color-bg-light);
-        padding-bottom: 5px;
-        padding-bottom: 20px;
-        text-align: left;
-        color: var(--color-text-primary);
-        width: 100%;
-    }
-
-    .yeezy hr{
-        text-align: center;
-        margin:unset;
-        margin-bottom: 50px;
-    }
-
-
-    /**
-    * se trabajan los estilos de el footer tablet
-    */
-    footer .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    footer p{
-        padding-top: 0px;
-    }
+a.signup{
+    color: var(--color-text-primary);
+}

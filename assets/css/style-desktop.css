@@ -1,7 +1,4 @@
-
-
-
-/**
+    /**
     * se trabajan los estilos as what-is
     */
     .title-limit {
@@ -27,7 +24,6 @@
         width: 100%;
     }
 
-   
     .what-is h2{
         display: inline-block;
         border-bottom: 2px solid var(--color-brand);

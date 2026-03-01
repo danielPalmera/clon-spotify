@@ -1,331 +1,287 @@
-    :root {
-        /**
-        * Colores
-        */
-        /* Marca */
-        --color-brand: #1db954; /* Verde Spotify */
-        --color-brand-hover: #1ed760; /* Verde hover */
+:root {
+    /* Colores */
+    --color-brand: #1db954;
+    --color-brand-hover: #1ed760;
+    --color-bg-dark: #191414;
+    --color-bg-light: #fff;
+    --color-bg-secondary: #282828;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #b3b3b3;
+    --color-text-muted: #6a6a6a;
+    --color-text-black: #0f0f0f;
+    --color-border: #333333;
 
-        /* Fondos */
-        --color-bg-dark: #191414; /* Negro Spotify */
-        /**
-        *   nota el diseño en pdf el fondo no es negro, 
-        *   es blanco se ajusta para ser 
-        */
-        --color-bg-light: #fff;
-        --color-bg-secondary: #282828; /* Gris oscuro tarjetas */
+    /* Tipografías y espacios */
+    --font-base: "Montserrat", "DM Sans", Helvetica, Arial, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.125rem;
+    --font-size-lg: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-2xl: 3rem;
+    --font-size-6xl: 6rem;
 
-        /* Textos */
-        --color-text-primary: #ffffff;
-        --color-text-secondary: #b3b3b3;
-        --color-text-muted: #6a6a6a;
-        /**
-        *   nota el diseño en pdf hay colores de cuente oscuras 
-        *   que no estan presentes en las variables suministradas, 
-        *   se utilizara otro color.
-        */
-        --color-text-black: #0f0f0f;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
 
-        /* Bordes / separadores */
-        --color-border: #333333;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
 
-        /**
-        * Tipografias, fuentes y espacios.
-        */
+    /* Otros */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-full: 500px;
+}
 
-        --font-base: "Montserrat", "DM Sans", Helvetica, Arial, sans-serif;
-        --font-size-xs: 0.75rem; /*  12px */
-        --font-size-sm: 0.875rem; /*  14px */
-        --font-size-base: 1rem; /*  16px */
-        --font-size-md: 1.125rem; /*  18px */
-        --font-size-lg: 1.5rem; /*  24px */
-        --font-size-xl: 2rem; /*  32px */
-        --font-size-2xl: 3rem; /*  48px */
-        /**
-        * nota el diseño en pdf n hay una tamaño de fuenta para H1
-        * se inprovisa uno
-        */
-        --font-size-6xl: 6rem; /*  48px */
+/* Reset básico */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        --font-weight-regular: 400;
-        --font-weight-medium: 500;
-        --font-weight-bold: 700;
+/* Evita scroll horizontal en móvil y asegura que los contenedores respeten el ancho */
+html, body {
+    max-width: 1440px;
+    margin: auto;
+    box-sizing: border-box;
+}
 
-        --spacing-xs: 0.25rem; /*  4px */
-        --spacing-sm: 0.5rem; /*  8px */
-        --spacing-md: 1rem; /* 16px */
-        --spacing-lg: 2rem; /* 32px */
-        --spacing-xl: 4rem; /* 64px */
-        --spacing-2xl: 6rem; /* 96px */
+body {
+    font-family: var(--font-base);
+    font-optical-sizing: auto;
+    font-weight: var(--font-weight-medium);
+    font-style: normal;
+    font-size: var(--font-size-base);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-primary);
+}
 
-        /**
-        * Otros
-        */
-
-        --radius-sm: 4px;
-        --radius-md: 8px;
-        --radius-full: 500px; /* Para botones en píldora */
-
-
-    }
-
-    /* Reset básico */
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    /* Evita scroll horizontal en móvil y asegura que los contenedores respeten el ancho */
-    html,
-    body {
-        max-width: 1440px;
-        margin: auto;
-        box-sizing: border-box;
-    }
-header{
+/* Header */
+header {
     position: sticky;
     top: 0;
     background-color: white;
     z-index: 100;
 }
-    /* Contenedor reutilizable: padding responsive sin provocar overflow */
-    .container {
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: none;
+}
+
+/* Contenedor reutilizable */
+.container {
     width: 100%;
     box-sizing: border-box;
-    padding-inline: 20px; /* usa padding interno en lugar de márgenes negativos */
-    }
+    padding-inline: 20px;
+}
+
+/* Títulos */
+h1 {
+    font-size: var(--font-size-2xl);
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-lg);
+}
+
+/* Hero banner */
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/banner-m.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px 20px 30px 20px;
+}
+
+section.hero div.container {
+    text-align: center;
+}
+
+.hero p .btn {
+    display: block;
+    width: 250px;
+    margin: 50px auto 0 auto;
+}
+
+.hero p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-primary);
+    margin: 20px;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-brand);
+}
+
+.btn:hover {
+    background-color: var(--color-brand-hover);
+    color: var(--color-text-muted);
+}
+
+.btn:focus {
+    text-decoration: none;
+}
+
+/* Artículos */
+.articles {
+    display: flex;
+}
+
+/* What-is */
+.title-limit {
+    display: inline-block;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.what-is {
+    padding: 50px 30px 30px 30px;
+}
+
+.what-is .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.what-is .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.what-is .articles article {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.what-is h2 {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-brand);
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--color-text-black);
+}
+
+.what-is hr {
+    height: 4px;
+    background-color: var(--color-brand);
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.what-is img {
+    max-width: 150px;
+    padding-bottom: 10px;
+}
+
+.what-is h3 {
+    color: var(--color-brand);
+    margin-bottom: 30px;
+}
+
+.what-is p {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-black);
+    margin: 20px 0 40px 0;
+    line-height: 1.8em;
+}
+
+/* Yeezy */
+.yeezy {
+    padding: 50px 30px 30px 30px;
+}
+
+.yeezy .container {
+    background-color: var(--color-brand);
+    padding: 50px 30px 30px 30px;
+}
+
+.yeezy h2 {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-bg-light);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.yeezy hr {
+    height: 4px;
+    background-color: var(--color-text-primary);
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.yeezy h3 {
+    margin-bottom: 30px;
+}
+
+.yeezy p {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    margin: 20px 20px 40px 0;
+    line-height: 1.8em;
+}
+
+.right img {
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: var(--color-bg-dark);
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 50px 20px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copy p {
+    padding-top: 0;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+a:hover {
+    color: var(--color-text-secondary);
+    text-decoration: underline;
+}
 
 
-    body{
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight:var(--font-weight-medium);
-        font-style: normal;
-        font-size:var(--font-size-base);
-        background-color: var(--color-bg-light);
-        color:var(--color-text-primary)
-    }
-
-    h1{
-        font-size: var(--font-size-2xl);
-        padding-bottom: 20px;
-    }
-
-    h2{
-        font-size:var(--font-size-xl);
-    }
-
-    h3{
-        font-size: var(--font-size-lg);
-    }
-    /**
-    * se trabajan los estilos de el header
-    */
-    nav{
-        padding: 20px 20px ;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav-links{
-        display: none;
-    }
-
-    /**
-    * se trabajan los estilos de el hero banner
-    */
-
-    .hero{
-        display: flex;
-        align-items: center; /* centra verticalmente el container */
-        background-image: url(../img/banner-m.jpg);
-        background-position: center center;
-        background-size: cover;
-        min-height: 100vh;
-        padding: 50px 20px 30px 20px;
-    }
-
-    section.hero div.container {
-        text-align: center;
-    }
-
-    .hero p .btn{
-        display: block;
-        width: 250px;
-        margin: auto;
-        margin-top: 50px;
-    }
-
-    .hero p{
-        font-size: var(--font-size-lg);
-        color: var(--color-text-primary);
-        margin:20px;
-    }
-
-    .btn{
-        background-color: red;
-        padding: 10px 20px;
-        border-radius: var(--radius-md);
-        background-color: var(--color-brand);
-    }
-
-    .btn:hover{
-        background-color: var(--color-brand-hover);
-        color:var(--color-text-muted)
-    }
-
-    .btn:focus{
-        text-decoration: none;
-    }
-    .articles{
-        display:flex;
-    }
-    /**
-    * se trabajan los estilos as what-is
-    */
-    .title-limit {
-        display: inline-block; /* El contenedor se ajusta al texto */
-        margin-bottom: 50px;
-        text-align: center;
-    }
-
-    .what-is{
-        padding: 50px 30px 30px 30px;
-    }
-
-    .what-is .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .what-is .articles {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
-        width: 100%;
-    }
-
-    .what-is .articles article {
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
-    }
-    
-    .what-is h2{
-        display: inline-block;
-        border-bottom: 2px solid var(--color-brand);
-        padding-bottom: 5px;
-        padding-bottom: 20px;
-        text-align: center;
-        color: var(--color-text-black);
-    }
-
-    .what-is hr{
-        height: 4px;
-        background-color: var(--color-brand);
-        margin:auto;
-        width: 80%;
-        margin-bottom: 50px;
-    }
-
-    .what-is img{
-        max-width: 150px;
-        padding-bottom: 10px;
-    }
-
-    .what-is h3{
-        color:var(--color-brand);
-        margin-bottom: 30px;
-    }
-
-    .what-is p{
-        font-size: var(--font-size-md);
-        font-weight: var(--font-weight-medium);
-        color: var(--color-text-black);
-        margin:20px 0px 40px 0px;
-        line-height: 1.8em;
-        
-    }
-
-    /**
-    * se trabajan los estilos de el yeezy
-    */
-    .yeezy{
-        padding: 50px 30px 30px 30px;
-    }
-    .yeezy .container{
-        background-color: var(--color-brand);
-        padding: 50px 30px 30px 30px;
-    }
-
-    .yeezy h2{
-        display: inline-block;
-        border-bottom: 2px solid var(--color-bg-light);
-        padding-bottom: 5px;
-        padding-bottom: 20px;
-        text-align: center;
-    
-    }
-
-
-    .yeezy h2{
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .yeezy hr{
-        height: 4px;
-        background-color: var(--color-text-primary);
-        margin:auto;
-        width: 80%;
-        margin-bottom: 50px;
-    }
-
-    .yeezy h3{
-        margin-bottom: 30px;
-    }
-
-    .yeezy p{
-        font-size: var(--font-size-md);
-        font-weight: var(--font-weight-medium);
-        margin:20px 20px 40px 0px;
-        line-height: 1.8em;
-    }
-    .right img{
-        max-width: 100%;
-    }
-
-/**
-* se trabajan los estilos de el footer
-*/
-
-    footer{
-        display: flex;
-        background-color:var(--color-bg-dark);
-        color: white;
-        justify-content: center;
-        align-content: center;
-        align-content: space-around;
-        padding: 50px 20px;
-    }
-
-    footer p{
-        text-align: center;
-        padding-top: 20px;
-    }
-    .copy p{
-        padding-top: 0px;
-    }
-    a{
-        text-decoration: none;
-        color:var(--color-text-primary)
-    }
-
-    a:hover{
-        color:var(--color-text-secondary);
-        text-decoration: underline;
-        
-    }
