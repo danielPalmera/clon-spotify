@@ -64,7 +64,7 @@
         gap: 2rem;
         align-items: center;
         justify-content: space-between;
-        background-image: url(/assets/img/spotify-icon-white.png);
+        background-image: url(../img/spotify-icon-white.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100px;
