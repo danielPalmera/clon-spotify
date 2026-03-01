@@ -4,11 +4,11 @@ desarrollo de versiones phone y tablet
 
 
 ## Capturas de pantalla (móvil y desktop)
-![Version desktop](https://danielpalmera.github.io/clon-spotify/design/clon-desktop.jpeg)
-![Version whide](https://danielpalmera.github.io/clon-spotify/design/clon-wide.jpeg)
-![Version tablet](https://danielpalmera.github.io/clon-spotify/design/clon-tablet.jpeg)
-![Version phone](https://danielpalmera.github.io/clon-spotify/design/clon-phone.jpeg)
-![Version phone con menu](https://danielpalmera.github.io/clon-spotify/design/clon-phone-menu.jpeg)
+![Version desktop](design/clon-desktop.jpeg)
+![Version whide](design/clon-wide.jpeg)
+![Version tablet](design/clon-tablet.jpeg)
+![Version phone](design/clon-phone.jpeg)
+![Version phone con menu](design/clon-phone-menu.jpeg)
 
 
 ## Lo que construí con es una prueba de lo aprendido hasta el momento tratando de hacer lo mejor y mas rapido posible aun sin tener los diseños correspondientes
@@ -21,5 +21,6 @@ finalizaria las secciones de ls enlaces en el footer, generaria un formualrio de
 
 
 ## URL del proyecto desplegado
-![link en vivo](https://danielpalmera.github.io/clon-spotify/)
-![Respositorio](https://github.com/danielPalmera/clon-spotify.git)
+https://danielpalmera.github.io/clon-spotify/
+
+https://github.com/danielPalmera/clon-spotify.git
