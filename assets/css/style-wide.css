@@ -1,2 +1,16 @@
 /* Desktop ancho */
-@media (min-width: 1440px) {  }
+.hero h1{
+    font-size: var(--font-size-6xl);
+}
+
+.hero p {
+    font-size: var(--font-size-xl);
+    margin: 20px;
+}
+
+.hero p .btn{
+    display: block;
+    width: 250px;
+    margin: auto;
+    margin-top: 50px;
+}

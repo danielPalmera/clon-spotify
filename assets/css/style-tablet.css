@@ -10,16 +10,17 @@
         gap: 1rem;
     }
 
+    
+
+    .icon-menu {
+        display: none;   
+    }
     .nav-links {
         display: flex;
         gap: 1rem;
         align-items: center;
         margin-left: auto; /* opcional: empuja los enlaces a la derecha */
         list-style: none;
-    }
-
-    .icon-menu {
-        display: none; /* ocultar icono de menú en tablet si usas links visibles */
     }
 
 

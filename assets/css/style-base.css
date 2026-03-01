@@ -82,12 +82,14 @@
     body {
         max-width: 1440px;
         margin: auto;
-
-    overflow-x: hidden;
-    box-sizing: border-box;
-    
+        box-sizing: border-box;
     }
-
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
     /* Contenedor reutilizable: padding responsive sin provocar overflow */
     .container {
     width: 100%;
@@ -148,17 +150,27 @@
     section.hero div.container {
         text-align: center;
     }
+
+    .hero p .btn{
+        display: block;
+        width: 250px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
     .hero p{
         font-size: var(--font-size-lg);
         color: var(--color-text-primary);
-        margin:40px 20px 20px 20px;
+        margin:20px;
     }
+
     .btn{
         background-color: red;
         padding: 10px 20px;
         border-radius: var(--radius-md);
         background-color: var(--color-brand);
     }
+
     .btn:hover{
         background-color: var(--color-brand-hover);
         color:var(--color-text-muted)
@@ -281,6 +293,9 @@
         font-weight: var(--font-weight-medium);
         margin:20px 20px 40px 0px;
         line-height: 1.8em;
+    }
+    .right img{
+        max-width: 100%;
     }
 
 /**
